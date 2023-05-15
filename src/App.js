@@ -7,8 +7,11 @@ import SignUp from './pages/SignUp'
 import Forgotpassword from './pages/Forgotpassword'
 import Offers from './pages/Offers'
 import Profile from './pages/Profile'
+import HeaderPage from "./components/HeaderPage";
 function App() {
   return (
+    <>
+    <HeaderPage/>
     <Router>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
@@ -19,6 +22,7 @@ function App() {
         <Route path="/profile" element={<Profile/>}></Route>
       </Routes>
     </Router>
+    </>
   );
 }
 
