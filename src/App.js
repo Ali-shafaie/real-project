@@ -11,8 +11,8 @@ import HeaderPage from "./components/HeaderPage";
 function App() {
   return (
     <>
-    <HeaderPage/>
     <Router>
+    <HeaderPage/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/sign-in" element={<SignIn/>}></Route>
