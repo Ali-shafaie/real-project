@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from "react-router";
 export default function HeaderPage() {
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location);
   function pathMathRoute(route) {
     if (route === location.pathname) {
       return true;
